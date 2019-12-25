@@ -1,0 +1,7 @@
+<aura:component controller="ex_test">
+    <aura:attribute name="result" type="String" default="Deepika"/>
+    <lightning:button label="call server" onclick="{!c.echo}"/>
+     
+    
+		{!v.result}
+</aura:component>

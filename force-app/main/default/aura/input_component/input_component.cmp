@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="EmpName" type="String"/>
+     <aura:attribute name="Age" type="Integer"/>
+    
+   <lightning:card title="Student" variant="narrow">
+       <lightning:input label="Enter Name" type="text" placeholder="Employee Name" value="{!v.EmpName}" />
+        <lightning:input label="Enter Age" type="text" placeholder="Age" value="{!v.Age}" />
+      </lightning:card>
+    {!v.EmpName} <br/>
+    {!v.Age} <br/>
+</aura:component>

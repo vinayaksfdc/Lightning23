@@ -1,0 +1,25 @@
+<apex:page controller="prod_wrap">
+  <apex:form >
+    <apex:pageBlock title="Prod line Item">
+          <apex:variable var="index" value="{!0}" />
+        <apex:pageBlockTable value="{!Lineitem}" var="a"> 
+        <apex:column headerValue="Sno">    
+       	{!index}
+             <apex:variable value="{!index+1}" var="index" />
+        </apex:column>
+        <apex:column headerValue="prod">    
+       	<apex:inputText value="{!a.prodName}"/>
+        </apex:column>    
+         <apex:column headerValue="prod code">    
+       	 <apex:inputText value="{!a.quant}"/>
+          </apex:column>  
+          <apex:column headerValue="quant">    
+       	<apex:inputText value="{!a.price}"/>
+        </apex:column>  
+         <apex:column headerValue="total amt">    
+       	<apex:inputText value="{!a.total}"/>
+        </apex:column>  
+        </apex:pageBlockTable>
+     </apex:pageBlock>
+  </apex:form>	
+</apex:page>

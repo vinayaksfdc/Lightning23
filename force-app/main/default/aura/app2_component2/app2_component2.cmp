@@ -1,0 +1,8 @@
+<aura:component >
+    <div>
+                    Mode : Online <br/>
+                    Branch: SRNAGAR   <br/>
+                    
+	</div>
+
+</aura:component>

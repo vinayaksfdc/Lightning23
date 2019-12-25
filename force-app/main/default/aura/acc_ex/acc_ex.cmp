@@ -1,0 +1,9 @@
+<aura:component controller="acc_ex">
+    <aura:attribute name="accList" type="list" />
+<aura:handler name="init" value="{!this}" action="{!c.myAction}"></aura:handler>
+    
+    <aura:iteration items="{!v.accList}" var="a">
+        <p> {!a.Name} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!a.Phone} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {!a.Industry}  </p>
+        <br/><br/>
+    </aura:iteration>    
+</aura:component>

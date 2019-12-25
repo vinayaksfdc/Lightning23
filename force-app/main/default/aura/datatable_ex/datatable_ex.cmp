@@ -1,0 +1,12 @@
+<aura:component controller="Aura_example1">
+    <aura:attribute name="optyList" type="list" /> 
+    
+    <lightning:input label="Stagename" type="String" aura:id="sname"/>
+    <lightning:button label="submit"  onclick="{!c.invoke}" />
+    <aura:iteration items="{!v.optyList}" var="a">
+    	<p>{!a.Name} &nbsp;&nbsp;&nbsp;&nbsp;{!a.stageName}&nbsp;&nbsp;
+            <br/><br/><br/>
+        </p>    
+    
+    </aura:iteration>
+</aura:component>

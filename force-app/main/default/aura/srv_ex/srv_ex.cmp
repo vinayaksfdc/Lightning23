@@ -1,0 +1,6 @@
+<aura:component controller="srv_ex">
+    <aura:attribute name="firstname" type="String" default="SRK"/>
+    <lightning:input aura:id="fname" label="Last Name" />
+    <lightning:button label="Call server" onclick="{!c.showMe}"/>
+    {!v.firstname}
+</aura:component>

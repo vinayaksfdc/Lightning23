@@ -1,0 +1,5 @@
+<aura:component>
+    
+	Search <input type="text" class="form-control" PlaceHolder="Search Text" 
+                  onKeyup="{!c.searchKeyChange}" />
+</aura:component>

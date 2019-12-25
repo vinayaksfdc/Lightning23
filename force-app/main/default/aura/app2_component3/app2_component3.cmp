@@ -1,0 +1,5 @@
+<aura:component >
+                Course : SFDC  <br/>
+                Module : Lightning <br/>
+                Duration: 7 Weeks<br/>  
+</aura:component>

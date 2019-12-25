@@ -1,0 +1,12 @@
+<aura:component controller="BeerSearchAuraService">
+   <aura:handler name="BeerEvent" event="c:SearchEvent" action="{!c.handleCompEvent}"/>
+    <aura:attribute name="BeerList" type="Beer__c"/>
+     <c:BeerSearchcomp></c:BeerSearchcomp>
+    
+    <aura:iteration items="{!v.BeerList}" var="item">
+        <P>{!item.id}</P>
+        <P>{!item.name}</P>
+    </aura:iteration>
+    
+    
+</aura:component>

@@ -1,0 +1,25 @@
+<aura:component controller="aura_ex">
+    <aura:attribute name="ltngSelectedvalue" type="string" default="IND"/>
+    <lightning:select name="cStat" label="Case Status" 
+                      value="{!v.ltngSelectedvalue}" aura:id="statusPicklist" >
+        <option value="">choose one...</option>
+        <option value="IND">IND</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+    </lightning:select>
+    
+    <aura:handler name="init" value="this" action="{!c.onchange}"></aura:handler>
+    
+    <aura:attribute name="ltngSelectedvalue1" type="string"/>
+    
+    <lightning:select name="cStat" label="Case Status" 
+                      value="{!v.ltngSelectedvalue1}" aura:id="statusPicklist" >
+        <option value="">choose one...</option>
+        <option value="TN">TN</option>
+        <option value="MEX">MEX</option>
+        <option value="LON">LON</option>
+        </lightning:select>
+ 
+    
+    
+</aura:component>

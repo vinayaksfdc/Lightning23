@@ -1,0 +1,5 @@
+<aura:component controller="exmple">
+    <aura:attribute name="firstname" type="String" />
+    <lightning:button label="call" onclick="{!c.echo}"/>
+   result: {!v.firstname}
+</aura:component>

@@ -1,0 +1,6 @@
+({
+           handleComponentEvent : function(cmp, event) {
+         
+        
+    }
+		})

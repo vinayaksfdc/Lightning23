@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="name" type="string" />
+     <aura:attribute name="amount" type="integer" />
+    <aura:attribute name="year" type="integer" />
+    <aura:attribute name="rate" type="decimal" />
+    <aura:attribute name="intrest" type="integer" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.show}" />
+    <div>
+    name: {!v.name} <br/>
+    years  {!v.year} <br/>
+    rate   {!v.rate} <br/>
+    Amount  {!v.amount} <br/>    
+    intrest {!v.intrest} <br/>
+    </div>
+</aura:component>

@@ -1,0 +1,59 @@
+<aura:component controller="Displaycontacts">
+    <aura:attribute name="beerList" type="Beer__c[]" />
+    <aura:attribute name="empName" type="String" />
+    
+    Search  <lightning:input aura:id="lname" label="Enter your name:" name="fullName" />
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    
+    			<ui:outputText value="{!v.empName}" />
+    
+     
+ 
+
+    <div class="slds-page-header">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-standard-opportunity" title="opportunity">
+                            
+                            <span class="slds-assistive-text">opportunity</span>
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Rohde Corp - 80,000 Widgets</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="slds-page-header__name-meta">Search Contacts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="slds-p-around_small">
+        <div class="slds-grid slds-wrap">
+            <aura:iteration items="{!v.accList}" var="a">
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning:card   title="{!a.Name}"
+                                    iconName="standard:account" footer="{!a.Id}">  
+                        <img src="{!$Resource.beerImg}" height="42" width="42" />
+                        <p class="slds-p-horizontal_small">
+                            {!a.Email}<br/>
+                            {!a.Phone}
+                        </p>
+                    </lightning:card>
+                    
+                </div>
+            </aura:iteration>
+        </div> 
+    </div>  
+   
+</aura:component>

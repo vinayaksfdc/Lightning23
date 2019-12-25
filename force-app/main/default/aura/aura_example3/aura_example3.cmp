@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="name" type="string" />
+    <aura:attribute name="sal" type="integer" />
+    <aura:attribute name="exp" type="integer" />
+    <aura:attribute name="bonus" type="decimal" />
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}" />
+    
+    <div>
+    Name: {!v.name} <br/>
+    sal:  {!v.sal} <br/>
+      exp:  {!v.exp}<br/>
+    bonus: {!v.bonus}<br/>
+    </div>    
+        
+</aura:component>
