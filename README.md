@@ -1,9 +1,7 @@
-# Salesforce App
+# Codes Related to Lightning component
 
-## Dev, Build and Test
+## Apex
 
-## Resources
+ 
 
-## Description of Files and Directories
-
-## Issues
+ 
